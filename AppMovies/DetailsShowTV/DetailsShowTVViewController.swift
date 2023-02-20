@@ -151,15 +151,16 @@ class DetailsShowTVViewController: UIViewController, DetailsShowTVViewProtocol {
                                     
                                     let v3 = elemnt as? [String:AnyObject]
                                     
+                                    
+                                    
                                     v3?.values.map { e in
                                         print(e)
                                         let v4 = e as? [String:AnyObject]
                                         
-                                        v4?.values.map { e4 in
-                                            print(e4)
+                                        v4?.first { elem in
+                                            print(elem)
+                                            return true
                                         }
-                                        
-                                        
                                     }
                                 }
                             }
