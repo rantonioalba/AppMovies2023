@@ -39,7 +39,7 @@ class LoginViewController: UIViewController, LoginViewProtocol, SpinnerDelegate 
         let view = UITextField()
         view.backgroundColor = .white
         view.placeholder = "Username"
-        view.text = "dr_robert"
+        view.text = ""
         view.layer.cornerRadius = 5.0
         view.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: 50))
         view.leftViewMode = .always
@@ -53,7 +53,7 @@ class LoginViewController: UIViewController, LoginViewProtocol, SpinnerDelegate 
         let view = UITextField()
         view.backgroundColor = .white
         view.placeholder = "Password"
-        view.text = "newDEVXV_2015"
+        view.text = ""
         view.layer.cornerRadius = 5.0
         view.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: 50))
         view.leftViewMode = .always
