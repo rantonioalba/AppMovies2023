@@ -24,5 +24,8 @@ class ProfilePresenter: ProfilePresenterProtocol {
     func getInfoProfile(completion: @escaping ((Profile?) -> ())) {
         interactor?.getInfoProfile(completion: completion)
     }
-
+    
+    func getFavorites() -> [Result]?{
+        return interactor?.getFavorites()
+    }
 }

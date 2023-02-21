@@ -17,12 +17,14 @@ protocol ProfileWireframeProtocol: AnyObject {
 //MARK: Presenter -
 protocol ProfilePresenterProtocol: AnyObject {
     func getInfoProfile(completion: @escaping ((Profile?) -> ()))
+    func getFavorites() -> [Result]?
 }
 
 //MARK: Interactor -
 protocol ProfileInteractorProtocol: AnyObject {
     var presenter: ProfilePresenterProtocol?  { get set }
     func getInfoProfile(completion: @escaping ((Profile?) -> ()))
+    func getFavorites() -> [Result]?
 }
 
 //MARK: View -

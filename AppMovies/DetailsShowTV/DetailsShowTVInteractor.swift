@@ -9,6 +9,7 @@
 //
 
 import UIKit
+import CoreData
 
 class DetailsShowTVInteractor: DetailsShowTVInteractorProtocol {
     weak var presenter: DetailsShowTVPresenterProtocol?
@@ -108,4 +109,74 @@ class DetailsShowTVInteractor: DetailsShowTVInteractorProtocol {
 
     }
     
+    func isFavorite(idShowTV: Int) -> Bool? {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        
+        let fetchRequest: NSFetchRequest<Favorite> = Favorite.fetchRequest()
+        
+        do {
+            fetchRequest.predicate = NSPredicate(format: "idShow == %d", idShowTV)
+            let fetchedResults = try context.fetch(fetchRequest)
+            if fetchedResults.first != nil {
+                return true
+            }
+            
+            return false
+        } catch {
+            print("Unable to Fetch Workouts, (\(error))")
+            return false
+        }
+    }
+    
+    func addToFavorites(showTV: Result) -> Bool? {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        
+        let entityDescription = NSEntityDescription.entity(forEntityName: "Favorite", in: context)
+        
+        if let entityDescription = entityDescription {
+            let favorite = Favorite(entity: entityDescription, insertInto: context)
+            
+            favorite.idShow = Int64(showTV.id ?? 0)
+            favorite.name = showTV.name
+            favorite.firstAirDate = showTV.firstAirDate
+            favorite.overview = showTV.overview
+            favorite.voteAverage = showTV.voteAverage ?? 0
+            favorite.posterPath = showTV.posterPath
+            
+            do {
+                try context.save()
+                return true
+            } catch let error {
+                print(error)
+                return false
+            }
+        }
+        return false
+    }
+    
+    func removeOfavorites(idShowTV: Int) -> Bool? {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        
+        let fetchRequest: NSFetchRequest<Favorite> = Favorite.fetchRequest()
+        
+        do {
+            fetchRequest.predicate = NSPredicate(format: "idShow == %d", idShowTV)
+            let fetchedResults = try context.fetch(fetchRequest)
+            
+            if let favorite = fetchedResults.first {
+                context.delete(favorite)
+                
+                try context.save()
+                return true
+            }
+            
+            return false
+        } catch {
+            print("Unable to Fetch Workouts, (\(error))")
+            return false
+        }
+    }
 }

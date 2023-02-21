@@ -56,6 +56,8 @@
 		493A236C29A036FD00DFF755 /* AppMovies.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 493A236A29A036FD00DFF755 /* AppMovies.xcdatamodeld */; };
 		493A236E29A036FF00DFF755 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 493A236D29A036FF00DFF755 /* Assets.xcassets */; };
 		493A237129A036FF00DFF755 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 493A236F29A036FF00DFF755 /* LaunchScreen.storyboard */; };
+		4956B5B629A48B5D00E78448 /* Favorite+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956B5B429A48B5D00E78448 /* Favorite+CoreDataClass.swift */; };
+		4956B5B729A48B5D00E78448 /* Favorite+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956B5B529A48B5D00E78448 /* Favorite+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +112,8 @@
 		493A236D29A036FF00DFF755 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		493A237029A036FF00DFF755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		493A237229A036FF00DFF755 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4956B5B429A48B5D00E78448 /* Favorite+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorite+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		4956B5B529A48B5D00E78448 /* Favorite+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorite+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +277,15 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		49197E4629A45A0800183436 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				4956B5B429A48B5D00E78448 /* Favorite+CoreDataClass.swift */,
+				4956B5B529A48B5D00E78448 /* Favorite+CoreDataProperties.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		493A235529A036FC00DFF755 = {
 			isa = PBXGroup;
 			children = (
@@ -292,6 +305,7 @@
 		493A236029A036FD00DFF755 /* AppMovies */ = {
 			isa = PBXGroup;
 			children = (
+				49197E4629A45A0800183436 /* CoreData */,
 				49197E3129A32D6200183436 /* Profile */,
 				49197E1D29A27D0800183436 /* DetailsShowTV */,
 				49197E0029A13D9300183436 /* Home */,
@@ -407,6 +421,7 @@
 				49197E1329A169C900183436 /* BaseCell.swift in Sources */,
 				49197E4229A3AB1E00183436 /* Country.swift in Sources */,
 				49197E2629A27ED700183436 /* DetailsShowTVViewController.swift in Sources */,
+				4956B5B729A48B5D00E78448 /* Favorite+CoreDataProperties.swift in Sources */,
 				49197E1729A1814600183436 /* MovieCell.swift in Sources */,
 				49197E0E29A1629300183436 /* SectionView.swift in Sources */,
 				49197E3929A32D9400183436 /* ProfileRouter.swift in Sources */,
@@ -421,6 +436,7 @@
 				49197E0829A13DBF00183436 /* HomeRouter.swift in Sources */,
 				49197DDB29A03E8C00183436 /* LoginViewController.swift in Sources */,
 				49197DF429A0927200183436 /* AuthenticateRouter.swift in Sources */,
+				4956B5B629A48B5D00E78448 /* Favorite+CoreDataClass.swift in Sources */,
 				49197E2529A27ED700183436 /* DetailsShowTVRouter.swift in Sources */,
 				49197E3B29A32D9400183436 /* ProfileProtocols.swift in Sources */,
 				49197DF629A0927200183436 /* AuthenticateProtocols.swift in Sources */,

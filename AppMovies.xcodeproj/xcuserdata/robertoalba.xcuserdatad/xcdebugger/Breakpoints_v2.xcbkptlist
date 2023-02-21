@@ -288,7 +288,7 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "25"
                   endingLineNumber = "25"
-                  offsetFromSymbolStart = "436">
+                  offsetFromSymbolStart = "432">
                </Location>
                <Location
                   uuid = "14A7B595-14B1-44FF-BBFD-74D5644443B8 - 83bb30741aae66b6"
@@ -510,8 +510,8 @@
             filePath = "AppMovies/DetailsShowTV/DetailsShowTVPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
             landmarkName = "getGenres(genresIds:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -612,7 +612,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "38151FC9-10D3-4A16-AFE0-2CE8C6D7D910 - 762095463a7f3e45"
+                  uuid = "38151FC9-10D3-4A16-AFE0-2CE8C6D7D910 - 762095463a7f17bc"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -622,12 +622,12 @@
                   urlString = "file:///Users/robertoalba/Documents/Github/AppMovies/AppMovies/API/ApiManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1293"
-                  endingLineNumber = "1293"
+                  startingLineNumber = "1094"
+                  endingLineNumber = "1094"
                   offsetFromSymbolStart = "156">
                </Location>
                <Location
-                  uuid = "38151FC9-10D3-4A16-AFE0-2CE8C6D7D910 - 762095463a7f3e45"
+                  uuid = "38151FC9-10D3-4A16-AFE0-2CE8C6D7D910 - 762095463a7f17bc"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -637,8 +637,8 @@
                   urlString = "file:///Users/robertoalba/Documents/Github/AppMovies/AppMovies/API/ApiManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1293"
-                  endingLineNumber = "1293"
+                  startingLineNumber = "1094"
+                  endingLineNumber = "1094"
                   offsetFromSymbolStart = "204">
                </Location>
             </Locations>
@@ -676,7 +676,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "AB29BFAB-0469-4898-A80D-32ABF093B0AD - 1dac090f1d310f76"
+                  uuid = "AB29BFAB-0469-4898-A80D-32ABF093B0AD - 1dac090f1d3116df"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -686,12 +686,12 @@
                   urlString = "file:///Users/robertoalba/Documents/Github/AppMovies/AppMovies/API/ApiManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1263"
-                  endingLineNumber = "1263"
+                  startingLineNumber = "1064"
+                  endingLineNumber = "1064"
                   offsetFromSymbolStart = "352">
                </Location>
                <Location
-                  uuid = "AB29BFAB-0469-4898-A80D-32ABF093B0AD - 1dac090f1d310f76"
+                  uuid = "AB29BFAB-0469-4898-A80D-32ABF093B0AD - 1dac090f1d3116df"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -701,8 +701,8 @@
                   urlString = "file:///Users/robertoalba/Documents/Github/AppMovies/AppMovies/API/ApiManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1263"
-                  endingLineNumber = "1263"
+                  startingLineNumber = "1064"
+                  endingLineNumber = "1064"
                   offsetFromSymbolStart = "392">
                </Location>
             </Locations>
@@ -718,13 +718,13 @@
             filePath = "AppMovies/Profile/ProfileViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "829795CC-12AF-4B02-BE33-3ED81D827431 - a188423907a3697f"
+                  uuid = "829795CC-12AF-4B02-BE33-3ED81D827431 - a188423907a36829"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -734,12 +734,12 @@
                   urlString = "file:///Users/robertoalba/Documents/Github/AppMovies/AppMovies/Profile/ProfileViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "69"
-                  endingLineNumber = "69"
-                  offsetFromSymbolStart = "80">
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "128">
                </Location>
                <Location
-                  uuid = "829795CC-12AF-4B02-BE33-3ED81D827431 - a188423907a3697f"
+                  uuid = "829795CC-12AF-4B02-BE33-3ED81D827431 - a188423907a36829"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -749,9 +749,9 @@
                   urlString = "file:///Users/robertoalba/Documents/Github/AppMovies/AppMovies/Profile/ProfileViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "69"
-                  endingLineNumber = "69"
-                  offsetFromSymbolStart = "108">
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "156">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -782,8 +782,8 @@
             filePath = "AppMovies/DetailsShowTV/DetailsShowTVInteractor.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "getProviders(idShowTV:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -798,13 +798,13 @@
             filePath = "AppMovies/DetailsShowTV/DetailsShowTVInteractor.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "getProviders(idShowTV:completion:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "8C798EB6-1A89-4524-98A4-16EF062B5091 - c7b9459483cffa55"
+                  uuid = "8C798EB6-1A89-4524-98A4-16EF062B5091 - c7b9459483cffa76"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -814,12 +814,12 @@
                   urlString = "file:///Users/robertoalba/Documents/Github/AppMovies/AppMovies/DetailsShowTV/DetailsShowTVInteractor.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
                   offsetFromSymbolStart = "288">
                </Location>
                <Location
-                  uuid = "8C798EB6-1A89-4524-98A4-16EF062B5091 - 4d52eec2a0bcc786"
+                  uuid = "8C798EB6-1A89-4524-98A4-16EF062B5091 - 4d52eec2a0bcc7a1"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -829,8 +829,8 @@
                   urlString = "file:///Users/robertoalba/Documents/Github/AppMovies/AppMovies/DetailsShowTV/DetailsShowTVInteractor.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
                   offsetFromSymbolStart = "108">
                </Location>
             </Locations>
@@ -862,8 +862,8 @@
             filePath = "AppMovies/DetailsShowTV/DetailsShowTVPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "getProviders(idShowTV:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -878,8 +878,8 @@
             filePath = "AppMovies/DetailsShowTV/DetailsShowTVViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -888,15 +888,239 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "2AF0A141-4D8A-4DBC-8183-814AD31EBD71"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AppMovies/DetailsShowTV/DetailsShowTVPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
             landmarkName = "getProviders(idShowTV:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B603DB0C-106D-438A-ABCA-80E2250B5060"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AppMovies/DetailsShowTV/DetailsShowTVViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B603DB0C-106D-438A-ABCA-80E2250B5060 - d290cb6310605aaa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppMovies.DetailsShowTVViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "AppMovies"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertoalba/Documents/Github/AppMovies/AppMovies/DetailsShowTV/DetailsShowTVViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130"
+                  offsetFromSymbolStart = "2728">
+               </Location>
+               <Location
+                  uuid = "B603DB0C-106D-438A-ABCA-80E2250B5060 - d290cb6310605aaa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppMovies.DetailsShowTVViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "AppMovies"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertoalba/Documents/Github/AppMovies/AppMovies/DetailsShowTV/DetailsShowTVViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130"
+                  offsetFromSymbolStart = "3156">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "57F2DC25-5D8F-4DCD-8616-B51BD9D8CEE3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AppMovies/DetailsShowTV/DetailsShowTVViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "272"
+            endingLineNumber = "272"
+            landmarkName = "tapButtonFavorite(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "775F4F8B-B635-4AF5-98AA-F2978DA95598"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AppMovies/DetailsShowTV/DetailsShowTVInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "169"
+            endingLineNumber = "169"
+            landmarkName = "removeOfavorites(idShowTV:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BDF00C77-0D21-400B-9A31-72EC038C9138"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AppMovies/Profile/ProfileInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "getFavorites()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A2E8043A-A39D-4425-ADE6-DB6B814661C0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AppMovies/Profile/ProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5BB4AF22-0132-4451-B3FE-31B70C55BDD3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AppMovies/Profile/ProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6B49A779-60FC-4B31-AD99-375A6FDD792F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AppMovies/Profile/ProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "158"
+            endingLineNumber = "158"
+            landmarkName = "collectionView(_:numberOfItemsInSection:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BB26C7B2-BB02-4152-B848-F234C146ED7F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AppMovies/Profile/ProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "BB26C7B2-BB02-4152-B848-F234C146ED7F - c5899e3a9282c5bd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppMovies.ProfileViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
+                  moduleName = "AppMovies"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertoalba/Documents/Github/AppMovies/AppMovies/Profile/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "165"
+                  endingLineNumber = "165"
+                  offsetFromSymbolStart = "600">
+               </Location>
+               <Location
+                  uuid = "BB26C7B2-BB02-4152-B848-F234C146ED7F - c5899e3a9282c5bd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppMovies.ProfileViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
+                  moduleName = "AppMovies"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robertoalba/Documents/Github/AppMovies/AppMovies/Profile/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "165"
+                  endingLineNumber = "165"
+                  offsetFromSymbolStart = "1492">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6F6E0F2A-F05A-4362-9633-34264EC08036"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AppMovies/Profile/ProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "162"
+            endingLineNumber = "162"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7091A77B-A65E-47DC-A8BE-A98352FC963D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AppMovies/Home/Cells/MovieCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "configureCell(result:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

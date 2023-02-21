@@ -12,6 +12,8 @@ import UIKit
 
 class DetailsShowTVPresenter: DetailsShowTVPresenterProtocol {
     
+    
+        
     weak private var view: DetailsShowTVViewProtocol?
     var interactor: DetailsShowTVInteractorProtocol?
     private let router: DetailsShowTVWireframeProtocol
@@ -123,5 +125,17 @@ class DetailsShowTVPresenter: DetailsShowTVPresenterProtocol {
             namesCountries = names.joined(separator: "")
         }
         return namesCountries
+    }
+    
+    func isFavorite(idShowTV: Int) -> Bool? {
+        return interactor?.isFavorite(idShowTV: idShowTV)
+    }
+        
+    func addToFavorites(showTV: Result) -> Bool? {
+        return interactor?.addToFavorites(showTV: showTV)
+    }
+    
+    func removeOfavorites(idShowTV: Int) -> Bool? {
+        interactor?.removeOfavorites(idShowTV: idShowTV)
     }
 }

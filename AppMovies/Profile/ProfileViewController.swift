@@ -13,10 +13,11 @@ import UIKit
 class ProfileViewController: UIViewController, ProfileViewProtocol {
 
 	var presenter: ProfilePresenterProtocol?
-    
+    var showsTV : [Result]?
     var profile : Profile!
 
     var scrollView:UIScrollView!
+    var collectionView : UICollectionView!
     
     let labelTitle: UILabel = {
         let view = UILabel()
@@ -39,6 +40,15 @@ class ProfileViewController: UIViewController, ProfileViewProtocol {
     let labelUserName: UILabel = {
         let view = UILabel()
         view.font = UIFont.systemFont(ofSize: 18)
+        view.textColor = UIColor(red: 29/255.0, green: 180/255.0, blue: 93/255.0, alpha: 1.0)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    let labelFavorites: UILabel = {
+        let view = UILabel()
+        view.text = "Favorite Shows"
+        view.font = UIFont.systemFont(ofSize: 25)
         view.textColor = UIColor(red: 29/255.0, green: 180/255.0, blue: 93/255.0, alpha: 1.0)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -69,8 +79,14 @@ class ProfileViewController: UIViewController, ProfileViewProtocol {
             if let object = object {
                 self?.profile = object
                 self?.setupView()
+                
+                self?.showsTV = self?.presenter?.getFavorites()
+                
+                self?.collectionView.reloadData()
             }
         })
+        
+        
     }
     
     func setupView() {
@@ -96,6 +112,37 @@ class ProfileViewController: UIViewController, ProfileViewProtocol {
         labelUserName.leadingAnchor.constraint(equalTo: imageView.trailingAnchor, constant: 25).isActive = true
         labelUserName.text = profile.username
         
+        scrollView.addSubview(labelFavorites)
+        labelFavorites.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 100).isActive = true
+        labelFavorites.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20).isActive = true
+        labelFavorites.heightAnchor.constraint(equalToConstant: 20).isActive = true
+        
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.minimumLineSpacing = 15
+        layout.minimumInteritemSpacing = 0
+        collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.isPagingEnabled = true
+        collectionView.backgroundColor = .clear
+        collectionView.contentInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
+        collectionView.scrollIndicatorInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
+        
+        collectionView.register(MovieCell.self, forCellWithReuseIdentifier: "\(MovieCell.self)")
+
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        
+        
+        scrollView.addSubview(collectionView)
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 155).isActive = true
+        collectionView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 0).isActive = true
+        collectionView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: 0).isActive = true
+        collectionView.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 1.0).isActive = true
+        collectionView.heightAnchor.constraint(equalToConstant: 350).isActive = true
+        
+        
+        
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         scrollView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor).isActive = true
         scrollView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
@@ -104,4 +151,32 @@ class ProfileViewController: UIViewController, ProfileViewProtocol {
         scrollView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
     }
 
+}
+
+extension ProfileViewController : UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return showsTV?.count ?? 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(MovieCell.self)", for: indexPath) as? MovieCell else {
+            return UICollectionViewCell()
+        }
+        
+        if let showTV = showsTV?[indexPath.row] {
+            cell.configureCell(result: showTV)
+        }
+        
+        cell.backgroundColor = UIColor(red: 21/255.0, green: 39/255.0, blue: 46/255.0, alpha: 1.0)
+        
+        cell.layer.cornerRadius = 15.0
+        cell.layer.masksToBounds = true
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: (collectionView.frame.width - 15) / 2, height: 350)
+    }
+    
 }

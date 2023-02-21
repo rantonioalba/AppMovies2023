@@ -22,17 +22,17 @@ struct ShowsTV: Codable {
 
 // MARK: - Result
 struct Result: Codable {
-    let posterPath: String?
-    let popularity: Double?
-    let id: Int?
-    let backdropPath: String?
-    let voteAverage: Double?
-    let overview, firstAirDate: String?
-    let originCountry: [String]?
-    let genreIDS: [Int]?
-    let originalLanguage: String?
-    let voteCount: Int?
-    let name, originalName: String?
+    var posterPath: String?
+    var popularity: Double?
+    var id: Int?
+    var backdropPath: String?
+    var voteAverage: Double?
+    var overview, firstAirDate: String?
+    var originCountry: [String]?
+    var genreIDS: [Int]?
+    var originalLanguage: String?
+    var voteCount: Int?
+    var name, originalName: String?
 
     enum CodingKeys: String, CodingKey {
         case posterPath = "poster_path"

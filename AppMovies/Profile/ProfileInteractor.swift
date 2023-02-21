@@ -9,6 +9,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ProfileInteractor: ProfileInteractorProtocol {
     weak var presenter: ProfilePresenterProtocol?
@@ -24,6 +25,39 @@ class ProfileInteractor: ProfileInteractorProtocol {
             } else {
                 completion(nil)
             }
+        }
+    }
+    
+    func getFavorites() -> [Result]? {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        
+        var showsTV: [Result] = [Result]()
+        
+        let fetchRequest: NSFetchRequest<Favorite> = Favorite.fetchRequest()
+        
+        do {
+//            fetchRequest.predicate = NSPredicate(format: "idShow == %d", idShowTV)
+            let fetchedResults = try context.fetch(fetchRequest)
+            
+            for item in fetchedResults {
+                var showTV = Result()
+                showTV.id = Int(item.idShow)
+                showTV.name = item.name
+                showTV.voteAverage = item.voteAverage
+                showTV.firstAirDate = item.firstAirDate
+                showTV.overview = item.overview
+                showTV.posterPath = item.posterPath
+                
+                showsTV.append(showTV)
+            }
+            
+            return showsTV
+            
+        } catch {
+            print("Unable to Fetch Workouts, (\(error))")
+//            return false
+            return showsTV
         }
     }
 }

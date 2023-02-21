@@ -9,6 +9,7 @@
 //
 
 import UIKit
+import CoreData
 
 class DetailsShowTVViewController: UIViewController, DetailsShowTVViewProtocol {
     
@@ -18,6 +19,7 @@ class DetailsShowTVViewController: UIViewController, DetailsShowTVViewProtocol {
     var showTV: Result!
     var watchTVProviders : [String : AnyObject] = [String : AnyObject]()
     var providersImages = [String?]()
+    var isFavorite = false
     
     let imageView: CustomImageView = {
         let view = CustomImageView()
@@ -95,6 +97,14 @@ class DetailsShowTVViewController: UIViewController, DetailsShowTVViewProtocol {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
+    
+    let imageViewFavorite: UIButton = {
+        let view = UIButton()
+        
+        view.setImage(UIImage(named: "heart")?.withRenderingMode(.alwaysOriginal).withTintColor(UIColor.lightGray), for: UIControl.State.normal)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
 
 	override func viewDidLoad() {
         super.viewDidLoad()
@@ -116,6 +126,13 @@ class DetailsShowTVViewController: UIViewController, DetailsShowTVViewProtocol {
         setupView()
         
         presenter?.getProviders(idShowTV: showTV.id)
+        
+        if let isFavorite = presenter?.isFavorite(idShowTV: showTV.id ?? 0) {
+            if isFavorite == true {
+                imageViewFavorite.setImage(UIImage(named: "heart")?.withRenderingMode(.alwaysOriginal).withTintColor(UIColor.white), for: .normal)
+                self.isFavorite = true
+            }
+        }
     }
     
     func setupView() {
@@ -136,6 +153,16 @@ class DetailsShowTVViewController: UIViewController, DetailsShowTVViewProtocol {
         labelTitle.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -5).isActive = true
         labelTitle.heightAnchor.constraint(equalToConstant: 20).isActive = true
         labelTitle.text = showTV.name ?? ""
+        
+        scrollView.addSubview(imageViewFavorite)
+        imageViewFavorite.addTarget(self, action: #selector(tapButtonFavorite), for: .touchUpInside)
+        
+        imageViewFavorite.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 15).isActive = true
+        imageViewFavorite.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -20).isActive = true
+        imageViewFavorite.widthAnchor.constraint(equalToConstant: 20).isActive = true
+        imageViewFavorite.heightAnchor.constraint(equalToConstant: 20).isActive = true
+        
+        
 
         scrollView.addSubview(labelCountry)
         labelCountry.topAnchor.constraint(equalTo: labelTitle.bottomAnchor, constant: 0).isActive = true
@@ -233,6 +260,19 @@ class DetailsShowTVViewController: UIViewController, DetailsShowTVViewProtocol {
     func didWatchTVProvidersImages(providersImages: [String?]) {
         self.providersImages = providersImages
         self.collectionView.reloadData()
+    }
+    
+    @objc func tapButtonFavorite(_ sender : UIButton) {
+        if !isFavorite {
+            if presenter?.addToFavorites(showTV: showTV) ?? false {
+                imageViewFavorite.setImage(UIImage(named: "heart")?.withRenderingMode(.alwaysOriginal).withTintColor(UIColor.white), for: .normal)
+                self.isFavorite = true
+            }
+        } else {
+            if presenter?.removeOfavorites(idShowTV: showTV.id ?? 0) ?? false {
+                imageViewFavorite.setImage(UIImage(named: "heart")?.withRenderingMode(.alwaysOriginal).withTintColor(UIColor.lightGray), for: UIControl.State.normal)
+            }
+        }
     }
 }
 

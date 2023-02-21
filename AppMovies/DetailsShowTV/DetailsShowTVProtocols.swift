@@ -21,6 +21,9 @@ protocol DetailsShowTVPresenterProtocol: AnyObject {
     func getProviders(idShowTV: Int?)
     func getGenres(genresIds:[Int]) -> String
     func getCountries(originCountry:[String]) -> String
+    func isFavorite(idShowTV: Int) -> Bool?
+    func addToFavorites(showTV: Result) -> Bool?
+    func removeOfavorites(idShowTV : Int) -> Bool?
 }
 
 //MARK: Interactor -
@@ -28,6 +31,9 @@ protocol DetailsShowTVInteractorProtocol: AnyObject {
     var presenter: DetailsShowTVPresenterProtocol?  { get set }
     func getProviders(idShowTV: Int?, completion: @escaping ((WatchTVProviders?) -> ()))
     func getProviders(idShowTV: Int?,completionHandler:@escaping (_ objects: [String : AnyObject]?, _ error: APIError?)->Void)
+    func isFavorite(idShowTV: Int) -> Bool?
+    func addToFavorites(showTV: Result) -> Bool?
+    func removeOfavorites(idShowTV : Int) -> Bool?
 }
 
 //MARK: View -
