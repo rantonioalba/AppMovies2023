@@ -39,7 +39,7 @@ class LoginViewController: UIViewController, LoginViewProtocol, SpinnerDelegate 
         let view = UITextField()
         view.backgroundColor = .white
         view.placeholder = "Username"
-        view.text = ""
+        view.text = "dr_robert"
         view.layer.cornerRadius = 5.0
         view.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: 50))
         view.leftViewMode = .always
@@ -53,7 +53,7 @@ class LoginViewController: UIViewController, LoginViewProtocol, SpinnerDelegate 
         let view = UITextField()
         view.backgroundColor = .white
         view.placeholder = "Password"
-        view.text = ""
+        view.text = "newDEVXV_2015"
         view.layer.cornerRadius = 5.0
         view.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: 50))
         view.leftViewMode = .always
@@ -87,6 +87,8 @@ class LoginViewController: UIViewController, LoginViewProtocol, SpinnerDelegate 
 	override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(named: "primaryColor")
+        self.view.backgroundColor = UIColor(red: 9/255.0, green: 22/255.0, blue: 26/255.0, alpha: 1.0)
+        self.view.backgroundColor = UIColor(red: 21/255.0, green: 39/255.0, blue: 46/255.0, alpha: 1.0)
         setupView()
         
         //Keyboard dismiss
@@ -97,6 +99,14 @@ class LoginViewController: UIViewController, LoginViewProtocol, SpinnerDelegate 
         NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardNotification(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         
         NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardNotification(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        if scrollView != nil {
+            scrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height)
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -115,13 +125,26 @@ class LoginViewController: UIViewController, LoginViewProtocol, SpinnerDelegate 
         
         containerImageView.addSubview(imageView)
         imageView.centerXAnchor.constraint(equalTo: containerImageView.centerXAnchor).isActive = true
-        imageView.centerYAnchor.constraint(equalTo: containerImageView.centerYAnchor).isActive = true
-        imageView.widthAnchor.constraint(equalToConstant: 150.0).isActive = true
-        imageView.heightAnchor.constraint(equalToConstant: 150.0).isActive = true
+        imageView.centerYAnchor.constraint(equalTo: containerImageView.centerYAnchor, constant: 20).isActive = true
+        imageView.widthAnchor.constraint(equalToConstant: 130.0).isActive = true
+        imageView.heightAnchor.constraint(equalToConstant: 130.0).isActive = true
         
-        stackView.addArrangedSubview(containerImageView)
+        scrollView.addSubview(containerImageView)
         containerImageView.translatesAutoresizingMaskIntoConstraints = false
-        containerImageView.heightAnchor.constraint(equalToConstant: 300).isActive = true
+        containerImageView.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 80).isActive = true
+//        imageView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor).isActive = true
+//        imageView.centerYAnchor.constraint(equalTo: scrollView.centerYAnchor).isActive = true
+//        imageView.widthAnchor.constraint(equalToConstant: 150.0).isActive = true
+//        imageView.heightAnchor.constraint(equalToConstant: 150.0).isActive = true
+        
+        containerImageView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 0).isActive = true
+        containerImageView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: 0).isActive = true
+        containerImageView.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 1.0).isActive = true
+        containerImageView.heightAnchor.constraint(equalToConstant: 250).isActive = true
+        
+//        stackView.addArrangedSubview(containerImageView)
+//        containerImageView.translatesAutoresizingMaskIntoConstraints = false
+//        containerImageView.heightAnchor.constraint(equalToConstant: 300).isActive = true
         
         let containerTextUserName = UIView()
         containerTextUserName.addSubview(textUserName)
@@ -164,7 +187,7 @@ class LoginViewController: UIViewController, LoginViewProtocol, SpinnerDelegate 
         
         
         scrollView.addSubview(stackView)
-        stackView.topAnchor.constraint(equalTo: scrollView.topAnchor,constant: 100).isActive = true
+        stackView.topAnchor.constraint(equalTo: containerImageView.bottomAnchor,constant: 0).isActive = true
         stackView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor).isActive = true
         stackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 1.0, constant: -50).isActive = true
 //        stackView.heightAnchor.constraint(equalToConstant: 450).isActive = true
@@ -179,6 +202,7 @@ class LoginViewController: UIViewController, LoginViewProtocol, SpinnerDelegate 
         scrollView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
         scrollView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
         scrollView.widthAnchor.constraint(equalTo: self.view.widthAnchor).isActive = true
+        scrollView.heightAnchor.constraint(equalTo: self.view.heightAnchor).isActive = true
         scrollView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
     }
     
@@ -211,10 +235,17 @@ class LoginViewController: UIViewController, LoginViewProtocol, SpinnerDelegate 
     @objc func handleKeyboardNotification(notification:NSNotification) {
         if let userInfo = notification.userInfo {
             let keyboardFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
-                
-            let contentInsets = UIEdgeInsets(top: 0, left: 0, bottom: (keyboardFrame.size.height) + 500, right: 0)
+            
+            let isKeyboardShowing = notification.name == UIResponder.keyboardWillShowNotification
+            
+            if isKeyboardShowing {
+                let contentInsets = UIEdgeInsets(top: 0, left: 0, bottom: (keyboardFrame.size.height) + 50, right: 0)
 
-            scrollView.contentInset = contentInsets
+                scrollView.contentInset = contentInsets
+            } else {
+                let contentInset:UIEdgeInsets = UIEdgeInsets.zero
+                scrollView.contentInset = contentInset
+            }
         }
     }
     

@@ -11,9 +11,13 @@
 import UIKit
 
 class DetailsShowTVPresenter: DetailsShowTVPresenterProtocol {
+    
     weak private var view: DetailsShowTVViewProtocol?
     var interactor: DetailsShowTVInteractorProtocol?
     private let router: DetailsShowTVWireframeProtocol
+    
+    private var imagesPathSet = Set<String?>()
+    private var arrayImages: [String?] = [String?]()
 
 
     init(interface: DetailsShowTVViewProtocol, interactor: DetailsShowTVInteractorProtocol?, router: DetailsShowTVWireframeProtocol) {
@@ -30,6 +34,64 @@ class DetailsShowTVPresenter: DetailsShowTVPresenterProtocol {
         interactor?.getProviders(idShowTV: idShowTV, completionHandler: completionHandler)
     }
     
+    func getProviders(idShowTV: Int?) {
+        interactor?.getProviders(idShowTV: idShowTV, completionHandler: { objects, error in
+            
+            if let objects = objects {
+//                self.watchTVProviders = objects
+                
+//                let arrayKeys = Array(self.watchTVProviders)
+//
+//
+//                let array = arrayKeys.first(where: {$0.key == "results"})?.value as? [String:AnyObject]
+//
+//                array.map { value in
+//                    print(value.values)
+//                }
+                
+                
+                
+                for (key, values) in objects {
+                    print("kind: \(key)")
+                    if key == "results" {
+                        print(values)
+                        if let array1 = values as? [String:AnyObject] {
+                            for (key, values) in array1 {
+                                print(key)
+                                if let array2 = values as? [String:AnyObject] {
+                                    for (key, values) in array2 {
+                                        print(key)
+                                        if let array3 = values as? [[String:AnyObject]] {
+                                            
+                                            for element in array3 {
+                                                print(element)
+                                                
+                                                for (key, values) in element {
+                                                    print(key)
+                                                    
+                                                    if key == "logo_path" {
+                                                        self.imagesPathSet.insert(values as? String)
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                                    
+                    }
+                }
+                
+                print(self.imagesPathSet)
+                
+                let array = Array(self.imagesPathSet)
+                self.arrayImages = array
+                print(array)
+                self.view?.didWatchTVProvidersImages(providersImages: array)
+            }
+        })
+    }
     
     func getGenres(genresIds: [Int]) -> String {
         var descriptions = [String]()

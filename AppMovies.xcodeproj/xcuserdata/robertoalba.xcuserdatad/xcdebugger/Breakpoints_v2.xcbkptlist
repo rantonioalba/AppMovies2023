@@ -14,8 +14,8 @@
             filePath = "AppMovies/API/ApiManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "972"
-            endingLineNumber = "972"
+            startingLineNumber = "773"
+            endingLineNumber = "773"
             landmarkName = "getRequestToken(completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "AppMovies/API/ApiManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "992"
-            endingLineNumber = "992"
+            startingLineNumber = "793"
+            endingLineNumber = "793"
             landmarkName = "getRequestToken(completionHandler:)"
             landmarkType = "7">
             <Locations>
@@ -78,8 +78,8 @@
             filePath = "AppMovies/API/ApiManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1030"
-            endingLineNumber = "1030"
+            startingLineNumber = "831"
+            endingLineNumber = "831"
             landmarkName = "getRequestToken(completionHandler:)"
             landmarkType = "7">
             <Locations>
@@ -206,8 +206,8 @@
             filePath = "AppMovies/API/ApiManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1086"
-            endingLineNumber = "1086"
+            startingLineNumber = "887"
+            endingLineNumber = "887"
             landmarkName = "validateToken(withLogin:completionHandler:)"
             landmarkType = "7">
             <Locations>
@@ -254,25 +254,9 @@
             filePath = "AppMovies/Login/LoginViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "touchesBegan(_:with:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "6D63BF14-AC02-48EE-BFC9-DCD792687425"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AppMovies/Login/LoginViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "215"
-            endingLineNumber = "215"
-            landmarkName = "handleKeyboardNotification(notification:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -334,8 +318,8 @@
             filePath = "AppMovies/API/ApiManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "595"
-            endingLineNumber = "595"
+            startingLineNumber = "396"
+            endingLineNumber = "396"
             landmarkName = "fetchObject(apiURL:parameters:completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -350,8 +334,8 @@
             filePath = "AppMovies/API/ApiManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "655"
-            endingLineNumber = "655"
+            startingLineNumber = "456"
+            endingLineNumber = "456"
             landmarkName = "fetchObject(apiURL:parameters:completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -366,8 +350,8 @@
             filePath = "AppMovies/API/ApiManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "706"
-            endingLineNumber = "706"
+            startingLineNumber = "507"
+            endingLineNumber = "507"
             landmarkName = "fetchObject(apiURL:parameters:completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -519,102 +503,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BFC67DA7-6C69-4339-B131-76B48B528E23"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AppMovies/DetailsShowTV/DetailsShowTVViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "BFC67DA7-6C69-4339-B131-76B48B528E23 - d290cb6310602d71"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AppMovies.DetailsShowTVViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "AppMovies"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/robertoalba/Documents/Github/AppMovies/AppMovies/DetailsShowTV/DetailsShowTVViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
-                  offsetFromSymbolStart = "2396">
-               </Location>
-               <Location
-                  uuid = "BFC67DA7-6C69-4339-B131-76B48B528E23 - 4cda07fe65eccfea"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.Optional&lt;AppMovies.WatchTVProviders&gt;) -&gt; () in AppMovies.DetailsShowTVViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "AppMovies"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/robertoalba/Documents/Github/AppMovies/AppMovies/DetailsShowTV/DetailsShowTVViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "60"
-                  endingLineNumber = "60"
-                  offsetFromSymbolStart = "84">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A1288036-E028-4749-A135-8EF7D14B7394"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AppMovies/DetailsShowTV/DetailsShowTVViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "A1288036-E028-4749-A135-8EF7D14B7394 - 4cda07fe65eccfea"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.Optional&lt;AppMovies.WatchTVProviders&gt;) -&gt; () in AppMovies.DetailsShowTVViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "AppMovies"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/robertoalba/Documents/Github/AppMovies/AppMovies/DetailsShowTV/DetailsShowTVViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "60"
-                  endingLineNumber = "60"
-                  offsetFromSymbolStart = "84">
-               </Location>
-               <Location
-                  uuid = "A1288036-E028-4749-A135-8EF7D14B7394 - 4cda07fe65eccfea"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.Optional&lt;AppMovies.WatchTVProviders&gt;) -&gt; () in AppMovies.DetailsShowTVViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "AppMovies"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/robertoalba/Documents/Github/AppMovies/AppMovies/DetailsShowTV/DetailsShowTVViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "60"
-                  endingLineNumber = "60"
-                  offsetFromSymbolStart = "128">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "FA83E698-78DB-4901-96F7-09E7852ECE72"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -622,8 +510,8 @@
             filePath = "AppMovies/DetailsShowTV/DetailsShowTVPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
             landmarkName = "getGenres(genresIds:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -638,8 +526,8 @@
             filePath = "AppMovies/API/ApiManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "870"
-            endingLineNumber = "870"
+            startingLineNumber = "671"
+            endingLineNumber = "671"
             landmarkName = "fetchObjects(apiURL:parameters:completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -718,8 +606,8 @@
             filePath = "AppMovies/API/ApiManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1293"
-            endingLineNumber = "1293"
+            startingLineNumber = "1094"
+            endingLineNumber = "1094"
             landmarkName = "deleteSession(completionHandler:)"
             landmarkType = "7">
             <Locations>
@@ -766,8 +654,8 @@
             filePath = "AppMovies/API/ApiManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1252"
-            endingLineNumber = "1252"
+            startingLineNumber = "1053"
+            endingLineNumber = "1053"
             landmarkName = "deleteSession(completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -782,8 +670,8 @@
             filePath = "AppMovies/API/ApiManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1263"
-            endingLineNumber = "1263"
+            startingLineNumber = "1064"
+            endingLineNumber = "1064"
             landmarkName = "deleteSession(completionHandler:)"
             landmarkType = "7">
             <Locations>
@@ -878,8 +766,8 @@
             filePath = "AppMovies/API/ApiManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "673"
-            endingLineNumber = "673"
+            startingLineNumber = "474"
+            endingLineNumber = "474"
             landmarkName = "fetchObject(apiURL:parameters:completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -951,79 +839,47 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6C1A21A0-F56B-4989-BEDA-2A7E81A6AAC1"
-            shouldBeEnabled = "Yes"
+            uuid = "1B16719C-9120-4EAF-9355-1BE49C9B9FB7"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AppMovies/DetailsShowTV/DetailsShowTVViewController.swift"
+            filePath = "AppMovies/Login/LoginViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "6C1A21A0-F56B-4989-BEDA-2A7E81A6AAC1 - 7fa63fbffa9993c0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;&gt;, Swift.Optional&lt;AppMovies.APIError&gt;) -&gt; () in AppMovies.DetailsShowTVViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "AppMovies"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/robertoalba/Documents/Github/AppMovies/AppMovies/DetailsShowTV/DetailsShowTVViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "127"
-                  endingLineNumber = "127"
-                  offsetFromSymbolStart = "200">
-               </Location>
-               <Location
-                  uuid = "6C1A21A0-F56B-4989-BEDA-2A7E81A6AAC1 - 7fa63fbffa9993c0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;&gt;, Swift.Optional&lt;AppMovies.APIError&gt;) -&gt; () in AppMovies.DetailsShowTVViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "AppMovies"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/robertoalba/Documents/Github/AppMovies/AppMovies/DetailsShowTV/DetailsShowTVViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "127"
-                  endingLineNumber = "127"
-                  offsetFromSymbolStart = "228">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "04AE2DCF-13C7-40F3-986D-48AFA47F8B4C"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AppMovies/DetailsShowTV/DetailsShowTVViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "215"
-            endingLineNumber = "215"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "241"
+            endingLineNumber = "241"
+            landmarkName = "handleKeyboardNotification(notification:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DC80FE64-06C2-45F2-90E7-557EDE108C99"
+            uuid = "BF712230-29DE-4783-AC6E-5B35123A9DB4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AppMovies/DetailsShowTV/DetailsShowTVPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "getProviders(idShowTV:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "32946874-81B3-42AA-9781-32822B7EAE7B"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AppMovies/DetailsShowTV/DetailsShowTVViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "211"
-            endingLineNumber = "211"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1031,288 +887,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5AB31377-F3DF-4640-9CAF-61D531C1E9E4"
+            uuid = "2AF0A141-4D8A-4DBC-8183-814AD31EBD71"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AppMovies/DetailsShowTV/DetailsShowTVViewController.swift"
+            filePath = "AppMovies/DetailsShowTV/DetailsShowTVPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "190"
-            endingLineNumber = "190"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0AE88ED6-D2C6-49FB-B783-A598891114EF"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AppMovies/DetailsShowTV/DetailsShowTVViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "205"
-            endingLineNumber = "205"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "8D1A0A39-2B9B-420E-BF68-3CB00D7C5F41"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AppMovies/DetailsShowTV/DetailsShowTVViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A65120BC-3B2B-47D8-9259-C81317BE67A9"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AppMovies/DetailsShowTV/DetailsShowTVViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "180"
-            endingLineNumber = "180"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "A65120BC-3B2B-47D8-9259-C81317BE67A9 - 7fa63fbffa999495"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;&gt;, Swift.Optional&lt;AppMovies.APIError&gt;) -&gt; () in AppMovies.DetailsShowTVViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "AppMovies"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/robertoalba/Documents/Github/AppMovies/AppMovies/DetailsShowTV/DetailsShowTVViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "180"
-                  endingLineNumber = "180"
-                  offsetFromSymbolStart = "892">
-               </Location>
-               <Location
-                  uuid = "A65120BC-3B2B-47D8-9259-C81317BE67A9 - 2fa9b52b59e65db9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #3 (Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;) -&gt; () in closure #2 (Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;&gt;, Swift.Optional&lt;AppMovies.APIError&gt;) -&gt; () in AppMovies.DetailsShowTVViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "AppMovies"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/robertoalba/Documents/Github/AppMovies/AppMovies/DetailsShowTV/DetailsShowTVViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "181"
-                  endingLineNumber = "181"
-                  offsetFromSymbolStart = "56">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3F38E941-0045-4B5B-8A71-EDE57385410E"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AppMovies/DetailsShowTV/DetailsShowTVViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "DBA87ED5-FDFF-45CE-AE5F-97CB1686B0A9"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AppMovies/DetailsShowTV/DetailsShowTVViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "140"
-            endingLineNumber = "140"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "DBA87ED5-FDFF-45CE-AE5F-97CB1686B0A9 - 7fa63fbffa99926d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;&gt;, Swift.Optional&lt;AppMovies.APIError&gt;) -&gt; () in AppMovies.DetailsShowTVViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "AppMovies"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/robertoalba/Documents/Github/AppMovies/AppMovies/DetailsShowTV/DetailsShowTVViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "140"
-                  endingLineNumber = "140"
-                  offsetFromSymbolStart = "776">
-               </Location>
-               <Location
-                  uuid = "DBA87ED5-FDFF-45CE-AE5F-97CB1686B0A9 - 30536d168110e974"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.AnyObject) -&gt; () in closure #2 (Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;&gt;, Swift.Optional&lt;AppMovies.APIError&gt;) -&gt; () in AppMovies.DetailsShowTVViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "AppMovies"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/robertoalba/Documents/Github/AppMovies/AppMovies/DetailsShowTV/DetailsShowTVViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "141"
-                  endingLineNumber = "141"
-                  offsetFromSymbolStart = "64">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "FE769420-ADB2-4701-97E2-61AD22677733"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AppMovies/DetailsShowTV/DetailsShowTVViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "FE769420-ADB2-4701-97E2-61AD22677733 - 7fa63fbffa9992c8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;&gt;, Swift.Optional&lt;AppMovies.APIError&gt;) -&gt; () in AppMovies.DetailsShowTVViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "AppMovies"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/robertoalba/Documents/Github/AppMovies/AppMovies/DetailsShowTV/DetailsShowTVViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "135"
-                  endingLineNumber = "135"
-                  offsetFromSymbolStart = "684">
-               </Location>
-               <Location
-                  uuid = "FE769420-ADB2-4701-97E2-61AD22677733 - 7fa63fbffa9992c8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;&gt;, Swift.Optional&lt;AppMovies.APIError&gt;) -&gt; () in AppMovies.DetailsShowTVViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "AppMovies"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/robertoalba/Documents/Github/AppMovies/AppMovies/DetailsShowTV/DetailsShowTVViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "135"
-                  endingLineNumber = "135"
-                  offsetFromSymbolStart = "720">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "4539B5E5-FBC3-4F57-8E1C-7D7EEDDA109D"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AppMovies/DetailsShowTV/DetailsShowTVViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "169"
-            endingLineNumber = "169"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "716333C8-4FFE-4EBE-82FF-968FA7DE014F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AppMovies/DetailsShowTV/DetailsShowTVViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "06253799-51C0-4655-9F73-EF74E5587794"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AppMovies/DetailsShowTV/DetailsShowTVViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "195A0866-1B18-4036-A3A8-E85065EBAD51"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AppMovies/DetailsShowTV/DetailsShowTVViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "157"
-            endingLineNumber = "157"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "62F61C67-EDB3-4562-A4CB-FA561CB680DD"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AppMovies/DetailsShowTV/DetailsShowTVViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "getProviders(idShowTV:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

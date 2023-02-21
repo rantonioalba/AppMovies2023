@@ -18,6 +18,7 @@ protocol DetailsShowTVWireframeProtocol: AnyObject {
 protocol DetailsShowTVPresenterProtocol: AnyObject {
     func getProviders(idShowTV: Int?, completion: @escaping ((WatchTVProviders?) -> ()))
     func getProviders(idShowTV: Int?,completionHandler:@escaping (_ objects: [String : AnyObject]?, _ error: APIError?)->Void)
+    func getProviders(idShowTV: Int?)
     func getGenres(genresIds:[Int]) -> String
     func getCountries(originCountry:[String]) -> String
 }
@@ -31,6 +32,6 @@ protocol DetailsShowTVInteractorProtocol: AnyObject {
 
 //MARK: View -
 protocol DetailsShowTVViewProtocol: AnyObject {
-
-  var presenter: DetailsShowTVPresenterProtocol?  { get set }
+    var presenter: DetailsShowTVPresenterProtocol?  { get set }
+    func didWatchTVProvidersImages(providersImages: [String?])
 }

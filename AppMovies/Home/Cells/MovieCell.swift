@@ -104,6 +104,7 @@ class MovieCell: BaseCell {
         let date = dateFormatter.date(from: result.firstAirDate ?? "")
         
         dateFormatter.dateFormat = "MMM dd, yyyy"
+        dateFormatter.locale = Locale(identifier: "en_US")
         labelDate.text = dateFormatter.string(from: date ?? Date())
 //        labelDate.text = result.firstAirDate
         labelRating.text = "\(result.voteAverage ?? 0)"

@@ -27,63 +27,13 @@ enum APIURL {
     case COUNTRIES
     case DELETE_SESSION
     case PROFILE
-    case PROVIDERS
-    case REGISTER_USER
-    case CAT_STATES
-    case CAT_CITIES
-    case POSTAL_CODES
-    case STORES
-    case CATEGORIES
-    case PRODUCTS
-    case BANNERS
-    case SUCURSALS
-    case EXTRA_PRODUCTS
-    case SHOPPING_CART
-    case SHOPPING_CART_EXTRAS
-    case GET_SHOPPING_CART
-    case GET_SHOPPING_CART_EXTRAS
-    case REGISTER_GUESS
-    case MAKE_PAYMENT
-    case DELETE_SHOPPING_CART
-    case ADD_CART
-    case READ_CARDS
-    case READ_ORDERS
-    case DELETE_CARD (cardId:String,userId:Int,isGuest:Bool)
-    case READ_PROFILE
-    case RETRIEVE_PASSWORD
-    case GET_DATES_DELIVERIES_AVAILABLES
-    case GET_DATE_DELIVERY_INMEDIATLY
-    case PUT_DATE_DELIVERY
-    case REMOVE_DATE_DELIVERY
-    case ADD_REMOVE_FAVORITES
-    case READ_FAVORITES
-    case CHECK_IS_FAVORITE
-    case READ_BREADS
-    case READ_PRESENTATIONS
-    case READ_FILL_TYPE
-    case READ_COVERAGE_TYPE
-    case READ_PRODUCT_ASSEMBLED
-    case ADD_DELIVERY_ADDRESS
-    case READ_DELIVERY_ADDRESS
-    case PRODUCT_PRESENTATIONS
-    case GET_DELIVERY_TRACK
-    case GET_ORDER_TRACK
-    case GET_INDICATOR_SHOPPING_CART
-    case GET_INDICATOR_SHOPPING_CART_GENERAL
-    case VALIDATE_COMING_PRODUCT_IN_CART
-    case REGISTER_BILLING_DATA
-    case READ_BILLING_DATA
-    case GET_CFDI_USES
 }
 
 extension APIURL:EndPoint {
     var base: String {
         switch self {
-        case .POSTAL_CODES:
-            return "http://54.215.166.83:8443"
         default:
         return "https://api.themoviedb.org" //QA
-
         }
     }
     
@@ -113,100 +63,6 @@ extension APIURL:EndPoint {
             return "/3/authentication/session"
         case .PROFILE:
             return "/3/account"
-        case .PROVIDERS:
-            return "/appX24/catalog/providers"
-        case .REGISTER_USER:
-            return "/appcommerce/login/registrousuario"
-        case .CAT_STATES:
-            return "/appX24/catalog/cat_estados"
-        case .CAT_CITIES:
-            return "/appX24/catalog/cat_ciudades"
-        case .POSTAL_CODES:
-            return "/appcommerce/codigopostal/getcodigopostal"
-        case .STORES:
-            return "/appX24/catalog/stores2"
-        case .CATEGORIES:
-            return "/appcommerce/sucursal/categorias"
-        case .PRODUCTS:
-            return "/appcommerce/productos/productoscategoria"
-        case .BANNERS:
-            return "/appcommerce/productos/leerbanners"
-        case .SUCURSALS:
-            return "/appcommerce/sucursal/leersucursales"
-        case .EXTRA_PRODUCTS:
-            return "/appcommerce/extras/leerformextras"
-        case .SHOPPING_CART:
-            return "/appcommerce/carritocompras/agregaralcarrito"
-        case .SHOPPING_CART_EXTRAS:
-            return "/appcommerce/extras/abcextras"
-        case .GET_SHOPPING_CART:
-            return "/appcommerce/carritocompras/leercarrito"
-        case .GET_SHOPPING_CART_EXTRAS:
-            return "/appcommerce/extras/leercarritoextras"
-        case .REGISTER_GUESS:
-            return "/appcommerce/invitado/registroinvitado"
-        case .MAKE_PAYMENT:
-            return "/appcommerce/pagos/realizarpago"
-        case .DELETE_SHOPPING_CART:
-            return "/appcommerce/carritocompras/vaciarcarrito"
-        case .ADD_CART:
-            return "/appcommerce/tarjetas/cards"
-        case .READ_CARDS:
-            return "/appcommerce/tarjetas/cards"
-        case .READ_ORDERS:
-            return "/appcommerce/pedidos/leerpedidosclientes"
-        case .DELETE_CARD(let cardId, let userId, let isGuest):
-            return "/appcommerce/tarjetas/cards/\(cardId)/\(userId)/\(isGuest)"
-        case .READ_PROFILE:
-            return "/appcommerce/login/perfilusuario"
-        case .RETRIEVE_PASSWORD:
-            return "/appcommerce/login/solicitudrecuperacion"
-        case .GET_DATES_DELIVERIES_AVAILABLES:
-            return "/appcommerce/fechaentrega/pintarcalendario"
-        case .GET_DATE_DELIVERY_INMEDIATLY:
-            return "/appcommerce/fechaentrega/leerfechaentregainmediata"
-        case .PUT_DATE_DELIVERY:
-            return "/appcommerce/fechaentrega/apartarfechaentrega"
-        case .REMOVE_DATE_DELIVERY:
-            return "/appcommerce/fechaentrega/liberarfechaentrega"
-        case .ADD_REMOVE_FAVORITES:
-            return "/appcommerce/favoritos/abcfavoritos"
-        case .READ_FAVORITES:
-            return "/appcommerce/favoritos/leerfavoritos"
-        case .CHECK_IS_FAVORITE:
-            return "/appcommerce/favoritos/leeresfavorito"
-        case .READ_BREADS:
-            return "/appcommerce/productos/leerpanes"
-        case .READ_PRESENTATIONS:
-            return "/appcommerce/productos/leerpresentacionproducto"
-        case .READ_FILL_TYPE:
-            return "/appcommerce/productos/leerrellenos"
-        case .READ_COVERAGE_TYPE:
-            return "/appcommerce/productos/leercobertura"
-        case .READ_PRODUCT_ASSEMBLED:
-            return "/appcommerce/productos/leerpastel"
-        case .ADD_DELIVERY_ADDRESS:
-            return "/appcommerce/direccioncliente/abcdireccion"
-        case .READ_DELIVERY_ADDRESS:
-            return "/appcommerce/direccioncliente/leerdirecciones"
-        case .PRODUCT_PRESENTATIONS:
-            return "/appcommerce/productos/detalleproducto"
-        case .GET_DELIVERY_TRACK:
-            return "/appcommerce/reparto/entregasencursopanel"
-        case .GET_ORDER_TRACK:
-            return "/appcommerce/combos/pedidosrastreo"
-        case .GET_INDICATOR_SHOPPING_CART:
-            return "/appcommerce/carritocompras/indicadorcarrito"
-        case .GET_INDICATOR_SHOPPING_CART_GENERAL:
-            return "/appcommerce/carritocompras/indicadorcarritogral"
-        case .VALIDATE_COMING_PRODUCT_IN_CART:
-            return "/appcommerce/carritocompras/validacionentrega"
-        case .REGISTER_BILLING_DATA:
-            return "/appcommerce/facturacion/abcdatosfacturacion"
-        case .READ_BILLING_DATA:
-            return "/appcommerce/facturacion/getdatosfacturacion"
-        case .GET_CFDI_USES:
-            return "/appcommerce/facturacion/getusocfdi"
         }
     }
 }
@@ -240,61 +96,6 @@ struct APICredentials{
     static let userName = "userservicios"
     static let password = "75dc230a000b524b766d6d98765da918735f6c28"
 }
-
-
-enum  UserResponse {
-    case UserResponseOK
-    case UserResponseIncorrectPassword
-    case UserResponseConfirmAccount
-    case UserResponseUnauthorized
-    case UserResponseNotFound
-    case UserResponseUnsuccessful
-    case UserResponseRequestFailed
-    case UserResponseInvalidData
-    case UserResponseJSONConversionFailure
-    case UserResponseUserDuplicated
-    case UserResponseEmailDuplicated
-    case UserResponseUserRemoved
-    case UserResponseNotUserClient
-}
-
-enum CardResponse {
-    case CardOK
-    case CardRejected
-    case CardExpired
-    case CardWithoutFunds
-    case CardStolen
-    case CardRejectedByAntifraudSystem
-    case CardResponseRequestFailed
-    case CardResponseInvalidData
-    case CardResponseJSONConversionFailure
-    case CardNoMoreThree
-    case CardRegistered
-    case CardCVV2NotValid
-    case CardExternalIDExisting
-    case CardExpirationDate
-    case CardOnlyTest
-    case CardDeclinedByTheBank
-    case CardRequiresAuthorization
-}
-
-enum PaymentResponse {
-    case PaymentOK
-    case CardOnlyTest
-    case CardWithoutFunds
-    case CardRejected
-    case CardCVV2NotValid
-    case PaymentNotRealized
-    case CardDeclinedByTheBank
-    case CardRegistered
-    case CardRequiresAuthorization
-    case CardExpirationDate
-    case PaymentResponseRequestFailed
-    case PaymentResponseInvalidData
-    case PaymentResponseJSONConversionFailure
-}
-
-
 
 enum APIError: Error {
     case requestFailed

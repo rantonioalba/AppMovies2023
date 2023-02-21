@@ -11,13 +11,13 @@
 import UIKit
 
 class DetailsShowTVViewController: UIViewController, DetailsShowTVViewProtocol {
-
+    
 	var presenter: DetailsShowTVPresenterProtocol?
     var scrollView:UIScrollView!
     var collectionView : UICollectionView!
     var showTV: Result!
     var watchTVProviders : [String : AnyObject] = [String : AnyObject]()
-    
+    var providersImages = [String?]()
     
     let imageView: CustomImageView = {
         let view = CustomImageView()
@@ -28,8 +28,8 @@ class DetailsShowTVViewController: UIViewController, DetailsShowTVViewProtocol {
     
     let labelTitle: UILabel = {
         let view = UILabel()
-        view.font = UIFont.systemFont(ofSize: 20)
-        view.textColor = UIColor.lightGray
+        view.font = UIFont.systemFont(ofSize: 22)
+        view.textColor = UIColor(red: 250/255.0, green: 250/255.0, blue: 250/255.0, alpha: 1.0)
         view.textAlignment = .center
 //        [NSAttributedString.Key.font:UIFont.systemFont(ofSize: 18),NSAttributedString.Key.foregroundColor:UIColor(red: 250/255.0, green: 250/255.0, blue: 250/255.0, alpha: 1.0),NSAttributedString.Key.kern : -0.43]
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -39,7 +39,7 @@ class DetailsShowTVViewController: UIViewController, DetailsShowTVViewProtocol {
     let labelCountry: UILabel = {
         let view = UILabel()
         view.font = UIFont.systemFont(ofSize: 15)
-        view.textColor = UIColor.lightGray
+        view.textColor = UIColor(red: 250/255.0, green: 250/255.0, blue: 250/255.0, alpha: 1.0)
         view.textAlignment = .center
 //        [NSAttributedString.Key.font:UIFont.systemFont(ofSize: 18),NSAttributedString.Key.foregroundColor:UIColor(red: 250/255.0, green: 250/255.0, blue: 250/255.0, alpha: 1.0),NSAttributedString.Key.kern : -0.43]
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -115,108 +115,7 @@ class DetailsShowTVViewController: UIViewController, DetailsShowTVViewProtocol {
                 
         setupView()
         
-//        presenter?.getProviders(idShowTV: showTV.id, completion: { (object :WatchTVProviders?) in
-//            if let object = object {
-//                self.watchTVProviders = object
-////                self.collectionView.reloadData()
-//            }
-//        })
-        
-        presenter?.getProviders(idShowTV: showTV.id, completionHandler: { objects, error in
-            
-            if let objects = objects {
-                self.watchTVProviders = objects
-                
-                let arrayKeys = Array(self.watchTVProviders)
-                
-                
-                let array = arrayKeys.first(where: {$0.key == "results"})?.value as? [String:AnyObject]
-                
-                if let array = array {
-                    
-                    let array2 = array.values
-//                        let array3 = Array(array2.values)
-                        
-                        array2.map { value in
-                        print(value)
-                            
-                            let v1 = value as? [String:AnyObject]
-                            
-                            v1.map { elemnt in
-                                print(elemnt)
-                                let v2 = elemnt as? [String: AnyObject]
-                                
-                                v2?.values.map { element in
-                                    print(element)
-                                    
-                                    let v3 = elemnt as? [String:AnyObject]
-                                    
-                                    
-                                    
-                                    v3?.values.map { e in
-                                        print(e)
-                                        let v4 = e as? [String:AnyObject]
-                                        
-                                        v4?.first { elem in
-                                            print(elem)
-                                            return true
-                                        }
-                                    }
-                                }
-                            }
-                            
-                    
-                }
-            }
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                array.map { value in
-                    print(value.values)
-                }
-                
-                
-                
-                var d1:AnyObject!
-                
-                for (key, values) in objects {
-                    print("kind: \(key)")
-                    if key == "results" {
-                        print(values)
-                        d1 = values
-//                        let v = values as? [String:AnyObject]
-//
-//                        for(key2, values2) in v  {
-//                            print(key2)
-////                            for(key3, values3) in values2  as? [String:AnyObject] {
-////                                print(key3)
-////                            }
-//                        }
-                    }
-                }
-                
-                
-                print(d1)
-                
-                
-                
-                
-                let paths = objects.map { value in
-                    print(value)
-                    
-                }
-            
-                print(paths)
-                print(paths)
-            }
-        })
-        
+        presenter?.getProviders(idShowTV: showTV.id)
     }
     
     func setupView() {
@@ -273,6 +172,7 @@ class DetailsShowTVViewController: UIViewController, DetailsShowTVViewProtocol {
         let date = dateFormatter.date(from: showTV.firstAirDate ?? "")
 
         dateFormatter.dateFormat = "MMM dd, yyyy"
+        dateFormatter.locale = Locale(identifier: "en_US")
         labelDate.text = dateFormatter.string(from: date ?? Date())
         labelRating.text = "\(showTV.voteAverage ?? 0)"
         
@@ -288,6 +188,24 @@ class DetailsShowTVViewController: UIViewController, DetailsShowTVViewProtocol {
         
         labelSummary.text = showTV.overview
         
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.minimumLineSpacing = 0
+        layout.minimumInteritemSpacing = 10
+        collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.isPagingEnabled = true
+        collectionView.backgroundColor = .clear
+        collectionView.contentInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
+        collectionView.scrollIndicatorInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
+        
+        collectionView.register(ImageProviderCell.self, forCellWithReuseIdentifier: "\(ImageProviderCell.self)")
+
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        
+        stackView.addArrangedSubview(collectionView)
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.heightAnchor.constraint(equalToConstant: 200).isActive = true
         
         scrollView.addSubview(stackView)
         stackView.topAnchor.constraint(equalTo: labelRating.bottomAnchor,constant: 10).isActive = true
@@ -311,16 +229,30 @@ class DetailsShowTVViewController: UIViewController, DetailsShowTVViewProtocol {
         
         
     }
+    
+    func didWatchTVProvidersImages(providersImages: [String?]) {
+        self.providersImages = providersImages
+        self.collectionView.reloadData()
+    }
 }
 
-//extension DetailsShowTVViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return 0
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        <#code#>
-//    }
-//
-//
-//}
+extension DetailsShowTVViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return providersImages.count
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(ImageProviderCell.self)", for: indexPath) as? ImageProviderCell else {
+            return UICollectionViewCell()
+        }
+        
+        cell.configureCell(pathImage: providersImages[indexPath.row] ?? "")
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: (collectionView.frame.size.width - 20) / 3, height: collectionView.frame.height)
+    }
+    
+}
